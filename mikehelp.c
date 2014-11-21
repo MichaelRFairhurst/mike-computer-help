@@ -146,10 +146,9 @@ int main( int argc,
   DESCRIBE_KEY_COMBO("Windows-Brightness Down", "Decrease brightness");
   DESCRIBE_KEY_COMBO("Function-Brightness Off", "Disable laptop screen. This is hardware based, not software based, so I didn't code this myself and I can't change the key combos for it");
 
-  gtk_text_insert(GTK_TEXT(text), NULL, &text->style->black, NULL, "\n*** Common commands for launching common programs via Alt-p\n\n", -1);
+  gtk_text_insert(GTK_TEXT(text), NULL, &text->style->black, NULL, "\n*** Starting programs\n\n", -1);
 
-  DESCRIBE_KEY_COMBO("Ctrl-Shift-Enter", "Open a terminal (because terminals are awesome)");
-  DESCRIBE_KEY_COMBO("Alt-P", "Run a command (usually to launch a window). Autocompletes the command, hit enter to run it");
+  DESCRIBE_KEY_COMBO("Alt-P", "Run a command (usually to open a program). Autocompletes the command, hit enter to run it");
   DESCRIBE_KEY_COMBO("Ctrl-Shift-Enter", "Open a terminal (because terminals are awesome)");
   DESCRIBE_KEY_COMBO("firefox", "...");
   DESCRIBE_KEY_COMBO("Ctrl-Shift-Enter", "Open a terminal (because terminals are awesome)");
