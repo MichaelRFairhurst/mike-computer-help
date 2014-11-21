@@ -119,7 +119,10 @@ int main( int argc,
   //                 "colored ", -1);
 
   gtk_text_insert(GTK_TEXT(text), NULL, &color, NULL, "Mike's How-To Use His Computer Guide!\n\n", -1);
-  gtk_text_insert(GTK_TEXT(text), NULL, &text->style->black, NULL, "*** So you are using a tiling window manager. There are multple workspaces, which fill a screen and have a layout. You can cycle through layouts with Alt-Space, and cycle through the windows with Alt-j and Alt-k. The rest is detailed here.\n\n", -1);
+
+  DESCRIBE_KEY_COMBO("Ctrl-F4", "Show this help. You found it!");
+
+  gtk_text_insert(GTK_TEXT(text), NULL, &text->style->black, NULL, "\n*** So you are using a tiling window manager. There are multple workspaces, which fill a screen and have a layout. You can cycle through layouts with Alt-Space, and cycle through the windows with Alt-j and Alt-k. The rest is detailed here.\n\n", -1);
 
   DESCRIBE_KEY_COMBO("Alt-[0-9]", "Hit alt + some number n, to move to the nth workspace. Each workspace has different windows");
   DESCRIBE_KEY_COMBO("Alt-Shift-[0-9]", "Move the current window to the nth workspace");
